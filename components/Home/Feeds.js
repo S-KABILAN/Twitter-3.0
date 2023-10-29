@@ -6,6 +6,7 @@ import { useContext, useState, useEffect } from 'react';
 import { TwitterContext } from '../../context/TwitterContext';
 
 const style = {
+    
     wrapper: `flex-[2] border-r border-l border-[#38444d]`,
     header: `sticky top-0 bg-[black] z-10 p-4 flex justify-between items-center`,
     headerTitle: `text-xl font-bold`,
@@ -84,7 +85,7 @@ function Feed() {
             {tweets?.map((tweet, index) => (
                 <Post
                     key={index}
-                    displayName={author.name === 'Unnamed'
+                    displayName={author.name === 'Kabilan'
                         ? `${author.walletAddress.slice(
                             0,
                             4,

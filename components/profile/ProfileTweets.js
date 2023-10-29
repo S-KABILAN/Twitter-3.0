@@ -74,7 +74,7 @@ const ProfileTweets = () => {
       {tweets?.map((tweet, index) => (
         <Post
           key={index}
-          displayName={author.name === 'Unnamed'
+          displayName={author.name === 'Kabilan'
             ? `${author.walletAddress.slice(
               0,
               4,
